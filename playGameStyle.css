@@ -1,0 +1,98 @@
+@font-face {
+    font-family: licorice;
+    src: url(./fonts/licorice.ttf);
+}
+@font-face {
+    font-family: rock;
+    src: url(./fonts/rock.ttf);
+}
+@font-face {
+    font-family: indie;
+    src: url(./fonts/indie.ttf);
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color:aliceblue;
+    font-family: rock;
+    text-align: center;
+    font-size: 4em;
+}
+#selections{
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.images{
+    width: 10%;
+    transform: rotate(25deg);
+}
+.images:hover{
+    width: 12%;
+    transform: rotate(0deg);
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 5px solid rgb(128, 255, 0);;
+}
+#rock{
+    position: absolute;
+    top: 37vh;
+    left:25vw;
+}
+#paper{
+    position: absolute;
+    top: 37vh;
+    left:44vw;
+}
+#scissors{
+    position: absolute;
+    top: 37vh;
+    left:63vw;
+}
+#rock:hover, #paper:hover, #scissors:hover{
+    position: absolute;
+    top: 30vh;
+}
+h2{
+    color:rgb(128, 255, 0);
+    text-align: center;
+    font-family: indie;
+    position: absolute;
+    top: 20vh;
+    left:30vw;
+    font-size: 3em;
+}
+#nameScore{
+    position: absolute;
+    color:rgb(128, 255, 0);
+    top: 78vh; 
+    left: 42vw; 
+    font-size: 3em; 
+    font-family: indie; 
+    font-weight: bold;
+}
+#showMsg{
+    color:#be0404;
+    position: absolute;
+    top: 40vh;
+    font-family: licorice;
+    font-size: 3em;
+    left: 32vw;
+}
+#computerNameScore{
+    color:aliceblue;
+}
+#compPhoto{
+    position: absolute;
+    border: 3px solid wheat;
+    width: 11vw;
+    height: 22vh;
+    top: 24vh;
+    left: 55vw;
+    border-radius: 4px;
+}
+#compLogo{
+    width: 10vw;
+    padding: 5px;
+}
