@@ -65,7 +65,7 @@ h2{
 }
 #nameScore{
     position: absolute;
-    color:rgb(128, 255, 0);
+    color:rgb(255, 255, 255);
     top: 78vh; 
     left: 42vw; 
     font-size: 3em; 
