@@ -126,5 +126,4 @@ retry.addEventListener('click', ()=>{
     retry.textContent='';
     computerNameScore.textContent=`Computer : ${computerScore}`;
     nameScore.textContent=`${humanName} : ${humanScore}`;
-
 })
