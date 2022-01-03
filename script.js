@@ -118,6 +118,7 @@ function compChoicePhoto(){
 }
 retry.addEventListener('click', ()=>{
     humanName=prompt('Enter your name', 'Honululu');
+    if(humanName==null){humanName='ghost'};
     humanScore=0;
     computerScore=0;
     showMsg.style.color='#be0404';
