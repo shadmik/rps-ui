@@ -40,7 +40,7 @@ header{
 #playTitle{
     text-align: center;
 }
-a{
+#play{
     display: block;
     width: 25vw;
     height:15vh;
@@ -54,7 +54,34 @@ a{
     color:rgb(2, 2, 2);
     
 }
-a:hover{
+#play:hover{
     font-size: 8vh;
     transition: 0.3s;
+    color:rgb(56, 19, 19);
+}
+footer{
+    color:aliceblue;
+    position: absolute;
+    top: 95vh;
+    left: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+#odinLink{
+    text-decoration: none;
+    color: rgb(202, 199, 13);
+    position: fixed;
+    top: 95vh;
+    left: 15vw;
+}
+#githubLink{
+    position: fixed;
+    top: 95vh;
+    left: 80vw;
+    text-decoration: none;
+    color: aliceblue;
+}
+#githubLink img{
+    position: fixed;
+    top: 92vh;
+    left: 90vw;
 }

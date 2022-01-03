@@ -1,13 +1,17 @@
 let humanScore=0;
 let computerScore=0;
 let humanName= prompt("Enter Your Name:",'Honululu');
+if(humanName==null){
+    humanName="ghost";
+}
 let computerNameScore=document.getElementById('computerNameScore');
-
+let body=document.querySelector('body');
 let nameScore=document.getElementById('nameScore');
 let compPhoto=document.getElementById('compPhoto');
+let retry=document.getElementById('retry')
 nameScore.textContent=`${humanName} : ${humanScore}`;
 let showMsg=document.getElementById('showMsg');
-let compChoiceArray=['rock', 'paper', 'scissors'];
+const compChoiceArray=['rock', 'paper', 'scissors'];
 function compChoice(){
     return compChoiceArray[Math.floor(Math.random()* compChoiceArray.length)]
 }
@@ -32,9 +36,11 @@ rock.addEventListener('click', ()=>{
 
     }}else{
         showMsg.style.color='rgb(128, 255, 0)';
-        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!'}
+        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!';
+    retry.textContent='Play again?';}
         else{
-            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`
+            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`;
+            retry.textContent='Play again?';
     }}
 })
 paper.addEventListener('click', ()=>{
@@ -54,8 +60,11 @@ paper.addEventListener('click', ()=>{
 
     }}else{
         showMsg.style.color='rgb(128, 255, 0)';
-        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!'}else{
-            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`
+        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!';
+        retry.textContent='Play again?';
+    }else{
+            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`;
+            retry.textContent='Play again?';
         }
     }
 })
@@ -76,8 +85,11 @@ scissors.addEventListener('click', ()=>{
 
     }}else{
         showMsg.style.color='rgb(128, 255, 0)';
-        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!'}else{
-            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`
+        if(computerScore==5){showMsg.textContent='Game Over! Computer is the winner!';
+        retry.textContent='Play again?';
+        }else{
+            showMsg.textContent=`Game Over! ${humanName}, you're the winner!`;
+            retry.textContent='Play again?'
     }}
 })
 function compChoicePhoto(){
@@ -104,3 +116,14 @@ function compChoicePhoto(){
         
     
 }
+retry.addEventListener('click', ()=>{
+    humanName=prompt('Enter your name', 'Honululu');
+    humanScore=0;
+    computerScore=0;
+    showMsg.style.color='#be0404';
+    showMsg.textContent='';
+    retry.textContent='';
+    computerNameScore.textContent=`Computer : ${computerScore}`;
+    nameScore.textContent=`${humanName} : ${humanScore}`;
+
+})
