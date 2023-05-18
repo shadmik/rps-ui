@@ -1,6 +1,6 @@
 let humanScore=0;
 let computerScore=0;
-let humanName= prompt("Enter Your Name:",'Honululu');
+let humanName= prompt("Enter Your Name:",'ha?');
 if(humanName==null){
     humanName="ghost";
 }
