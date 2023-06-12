@@ -100,17 +100,17 @@ function compChoicePhoto(){
         if(compSelection=='rock'){
             let img=document.createElement('img');
         img.id='compLogo';
-        img.src='./images/rock.jpg';
+        img.src='./images/rock.png';
             compPhoto.appendChild(img)
         }else if(compSelection=='paper'){
             let img=document.createElement('img');
         img.id='compLogo';
-        img.src='./images/paper.jpg';
+        img.src='./images/paper.png';
             compPhoto.appendChild(img)
         }else if(compSelection=='scissors'){
             let img=document.createElement('img');
         img.id='compLogo';
-        img.src='./images/scissors.jpg';
+        img.src='./images/scissors.png';
             compPhoto.appendChild(img)
         }
         
